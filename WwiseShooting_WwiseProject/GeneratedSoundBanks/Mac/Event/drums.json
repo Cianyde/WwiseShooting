@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "2726606664",
+    "Type": "Event",
+    "GUID": "{35B8B023-DF2F-4361-B789-6A09BFFD41CE}",
+    "Language": "SFX",
+    "Hash": "{008C2042-1AC2-9694-A29D-7E116F080CE4}",
+    "ObjectPath": "drums",
+    "ShortName": "drums",
+    "Path": "Event/drums.bnk",
+    "Media": [
+     {
+      "Id": "1020447097",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "drum.wav",
+      "Path": "Media/1020447097.wem",
+      "CachePath": "SFX/drum_FBC78EF0.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2726606664",
+      "Name": "drums",
+      "ObjectPath": "\\Events\\Default Work Unit\\drums",
+      "GUID": "{35B8B023-DF2F-4361-B789-6A09BFFD41CE}",
+      "DurationType": "OneShot",
+      "DurationMin": "15.75",
+      "DurationMax": "15.75",
+      "MediaRefs": [
+       {
+        "Id": "1020447097"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{0CF613B8-8674-3DE3-9346-EA7B0D5535F1}"
+ }
+}

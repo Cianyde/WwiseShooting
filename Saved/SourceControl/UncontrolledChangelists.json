@@ -1,0 +1,25 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/PerforceWorkspace/Ian200044/year2/Ian200044/Ian200044/year3/Ian200044/Ian200044/year3/WwiseShooting/Content/WwiseAudio/DefaultGeometrySurfacePropertiesTable.uasset",
+				"C:/PerforceWorkspace/Ian200044/year2/Ian200044/Ian200044/year3/Ian200044/Ian200044/year3/WwiseShooting/Content/WwiseAudio/DefaultReverbAssignmentTable.uasset",
+				"C:/PerforceWorkspace/Ian200044/year2/Ian200044/Ian200044/year3/Ian200044/Ian200044/year3/WwiseShooting/Content/WwiseAudio/InitBank.uasset",
+				"C:/PerforceWorkspace/Ian200044/year2/Ian200044/Ian200044/year3/Ian200044/Ian200044/year3/WwiseShooting/Content/WwiseAudio/drums.uasset",
+				"C:/PerforceWorkspace/Ian200044/year2/Ian200044/Ian200044/year3/Ian200044/Ian200044/year3/WwiseShooting/Content/MS_gunShots.uasset",
+				"C:/PerforceWorkspace/Ian200044/year2/Ian200044/Ian200044/year3/Ian200044/Ian200044/year3/WwiseShooting/Content/audioSource/5_56-AR15-Single-Close-GunShot-A-www_fesliyanstudios_com-01.uasset",
+				"C:/PerforceWorkspace/Ian200044/year2/Ian200044/Ian200044/year3/Ian200044/Ian200044/year3/WwiseShooting/Content/audioSource/5_56-AR15-Single-Close-GunShot-A-www_fesliyanstudios_com-02.uasset",
+				"C:/PerforceWorkspace/Ian200044/year2/Ian200044/Ian200044/year3/Ian200044/Ian200044/year3/WwiseShooting/Content/audioSource/5_56-AR15-Single-Close-GunShot-A-www_fesliyanstudios_com-03.uasset",
+				"C:/PerforceWorkspace/Ian200044/year2/Ian200044/Ian200044/year3/Ian200044/Ian200044/year3/WwiseShooting/Content/audioSource/5_56-AR15-Single-Close-GunShot-A-www_fesliyanstudios_com-04.uasset",
+				"C:/PerforceWorkspace/Ian200044/year2/Ian200044/Ian200044/year3/Ian200044/Ian200044/year3/WwiseShooting/Content/audioSource/5_56-AR15-Single-Close-GunShot-A-www_fesliyanstudios_com-05.uasset",
+				"C:/PerforceWorkspace/Ian200044/year2/Ian200044/Ian200044/year3/Ian200044/Ian200044/year3/WwiseShooting/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/8K/0OLPBOSZCPU1X7E3PCLCGF.uasset",
+				"C:/PerforceWorkspace/Ian200044/year2/Ian200044/Ian200044/year3/Ian200044/Ian200044/year3/WwiseShooting/Content/FirstPerson/Input/IMC_Weapons.uasset",
+				"C:/PerforceWorkspace/Ian200044/year2/Ian200044/Ian200044/year3/Ian200044/Ian200044/year3/WwiseShooting/Content/WwiseAudio/Events/Default_Work_Unit/LebbyJamies.uasset",
+				"C:/PerforceWorkspace/Ian200044/year2/Ian200044/Ian200044/year3/Ian200044/Ian200044/year3/WwiseShooting/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/8/15/GT1B9CM8RRXR5WTM6WCR5R.uasset"
+			]
+		}
+	]
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{41D07E1F-E51C-4C92-AD1C-C14B816626FB}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{41D07E1F-E51C-4C92-AD1C-C14B816626FB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="drums" ID="{35B8B023-DF2F-4361-B789-6A09BFFD41CE}">
+					<ChildrenList>
+						<Action Name="" ID="{DBF6A872-B096-4F50-93D5-7F28633A210A}" ShortID="753010550">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="drum" ID="{7F679861-5A3E-436B-9701-EAD3B949319D}" WorkUnitID="{EA81FA90-1AF4-40D8-B54F-8C91243C867E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="LebbyJamies" ID="{27CF8C2B-A284-43CC-8465-060BEF6F52AB}">
+					<ChildrenList>
+						<Action Name="" ID="{9C84F154-ED6F-4D88-98EB-4ADB83AE8C82}" ShortID="273251758">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="my Lebby Jammies" ID="{97BCD8D8-6A6D-4BE9-905D-B7A0570ED2D5}" WorkUnitID="{EA81FA90-1AF4-40D8-B54F-8C91243C867E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

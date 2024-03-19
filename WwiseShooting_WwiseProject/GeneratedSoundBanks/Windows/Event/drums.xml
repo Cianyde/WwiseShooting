@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="2726606664" Type="Event" GUID="{35B8B023-DF2F-4361-B789-6A09BFFD41CE}" Language="SFX" Hash="{008C2042-1AC2-9694-A29D-7E116F080CE4}">
+			<ObjectPath>drums</ObjectPath>
+			<ShortName>drums</ShortName>
+			<Path>Event/drums.bnk</Path>
+			<Media>
+				<File Id="1020447097" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>drum.wav</ShortName>
+					<Path>Media/1020447097.wem</Path>
+					<CachePath>SFX/drum_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2726606664" Name="drums" ObjectPath="\Events\Default Work Unit\drums" GUID="{35B8B023-DF2F-4361-B789-6A09BFFD41CE}" DurationType="OneShot" DurationMin="15.75" DurationMax="15.75">
+					<MediaRefs>
+						<MediaRef Id="1020447097"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{CBDD8FD9-7A7C-C634-2085-565BEEA0A435}</FileHash>
+</SoundBanksInfo>

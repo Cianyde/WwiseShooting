@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="121223540" Type="Event" GUID="{27CF8C2B-A284-43CC-8465-060BEF6F52AB}" Language="SFX" Hash="{31580175-48BF-A0D2-54FE-8964E6DE283D}">
+			<ObjectPath>LebbyJamies</ObjectPath>
+			<ShortName>LebbyJamies</ShortName>
+			<Path>Event/LebbyJamies.bnk</Path>
+			<Media>
+				<File Id="550237060" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>my Lebby Jammies.wav</ShortName>
+					<Path>Media/550237060.wem</Path>
+					<CachePath>SFX/my Lebby Jammies_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="121223540" Name="LebbyJamies" ObjectPath="\Events\Default Work Unit\LebbyJamies" GUID="{27CF8C2B-A284-43CC-8465-060BEF6F52AB}" DurationType="OneShot" DurationMin="21.007822" DurationMax="21.007822">
+					<MediaRefs>
+						<MediaRef Id="550237060"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{3BD98230-8EA5-6297-2D34-1308AB5CDC53}</FileHash>
+</SoundBanksInfo>

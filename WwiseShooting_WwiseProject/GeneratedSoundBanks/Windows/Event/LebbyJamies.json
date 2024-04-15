@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{27CF8C2B-A284-43CC-8465-060BEF6F52AB}",
     "Language": "SFX",
-    "Hash": "{31580175-48BF-A0D2-54FE-8964E6DE283D}",
+    "Hash": "{30A4B0DD-B18F-339C-D0BB-DF4DB9A0B8AC}",
     "ObjectPath": "LebbyJamies",
     "ShortName": "LebbyJamies",
     "Path": "Event/LebbyJamies.bnk",
@@ -32,8 +32,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\LebbyJamies",
       "GUID": "{27CF8C2B-A284-43CC-8465-060BEF6F52AB}",
       "DurationType": "OneShot",
-      "DurationMin": "21.007822",
-      "DurationMax": "21.007822",
+      "DurationMin": "42",
+      "DurationMax": "42",
       "MediaRefs": [
        {
         "Id": "550237060"
@@ -43,6 +43,6 @@
     ]
    }
   ],
-  "FileHash": "{C26BCA80-1E10-3360-0435-4DEC1C8BBDC1}"
+  "FileHash": "{86501E00-FA9B-C782-9BFA-D4CA1D96C03B}"
  }
 }

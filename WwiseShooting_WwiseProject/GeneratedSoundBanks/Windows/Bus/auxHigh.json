@@ -1,0 +1,74 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "221139265",
+    "Type": "Bus",
+    "GUID": "{A0EF456B-4F6A-43F8-811B-9E390D2985AE}",
+    "Language": "SFX",
+    "Hash": "{562B4CBF-E40D-BD6D-D094-34DA8876312C}",
+    "ObjectPath": "auxHigh",
+    "ShortName": "auxHigh",
+    "Path": "Bus/auxHigh.bnk",
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "33066933",
+       "Name": "Gain (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxHigh\\[Effect Slot [2]: (Gain)]\\Gain (Custom)",
+       "GUID": "{A129F3E5-8E23-4C6C-A89B-C415F42FF0B4}",
+       "LibName": "Wwise Gain",
+       "LibId": "9109507"
+      },
+      {
+       "Id": "522670858",
+       "Name": "Meter (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxHigh\\[Effect Slot [1]: (Meter)]\\Meter (Custom)",
+       "GUID": "{D424650A-8555-4579-94B7-12F41BA90EB7}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      }
+     ],
+     "ShareSets": [
+      {
+       "Id": "960017122",
+       "Name": "Low_Pass_200Hz",
+       "ObjectPath": "\\Effects\\Factory Effects\\Parametric EQ\\Low Pass Filters\\Low_Pass_200Hz",
+       "GUID": "{830124FB-B9D5-4AE8-846E-E94A74652666}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "221139265",
+      "Name": "auxHigh",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxHigh",
+      "GUID": "{A0EF456B-4F6A-43F8-811B-9E390D2985AE}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "33066933"
+        },
+        {
+         "Id": "522670858"
+        }
+       ],
+       "ShareSets": [
+        {
+         "Id": "960017122"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{DA543921-610A-6AFC-6546-C43DBEB388BC}"
+ }
+}

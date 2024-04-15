@@ -11,6 +11,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "AkComponent.h"
 #include "AkAudioEvent.h"
+#include "InventoryComponent.h"
 #include "../../WwiseShooting_WwiseProject/GeneratedSoundBanks/Wwise_IDs.h"
 
 
@@ -19,7 +20,8 @@ UTP_WeaponComponent::UTP_WeaponComponent()
 {
 	// Default offset from the character location for projectiles to spawn
 	MuzzleOffset = FVector(100.0f, 0.0f, 10.0f);
-	BindCallback.BindUFunction(this, "beatCallBack");
+	//BindCallback.BindUFunction(this, "beatCallBack");
+	
 }
 
 void UTP_WeaponComponent::BeginPlay()
@@ -79,15 +81,16 @@ void UTP_WeaponComponent::Fire()
 	
 }
 
-void UTP_WeaponComponent::AttachWeapon(AWwiseShootingCharacter* TargetCharacter)
+void UTP_WeaponComponent::AttachWeapon(AWwiseShootingCharacter* TargetCharacter, UTP_WeaponComponent* pickedUpWeapon)
 {
 	Character = TargetCharacter;
 
 	// Check that the character is valid, and has no rifle yet
-	if (Character == nullptr || Character->GetHasRifle())
+	if (Character == nullptr || Character->GetHasThisRifle(pickedUpWeapon))
 	{
 		return;
 	}
+	Character->InventoryComponent->AddWeapon(pickedUpWeapon);
 
 	// Attach the weapon to the First Person Character
 	FAttachmentTransformRules AttachmentRules(EAttachmentRule::SnapToTarget, true);
@@ -114,6 +117,7 @@ void UTP_WeaponComponent::AttachWeapon(AWwiseShootingCharacter* TargetCharacter)
 
 	if (BPMsong != nullptr)
 	{
+		BindCallback.BindUFunction(this, FName("beatCallBack"));
 		UAkGameplayStatics::PostEvent(BPMsong, GetOwner(), AK_MusicSyncBeat, BindCallback);
 	}
 }

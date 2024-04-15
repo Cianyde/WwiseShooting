@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="121223540" Type="Event" GUID="{27CF8C2B-A284-43CC-8465-060BEF6F52AB}" Language="SFX" Hash="{31580175-48BF-A0D2-54FE-8964E6DE283D}">
+		<SoundBank Id="121223540" Type="Event" GUID="{27CF8C2B-A284-43CC-8465-060BEF6F52AB}" Language="SFX" Hash="{30A4B0DD-B18F-339C-D0BB-DF4DB9A0B8AC}">
 			<ObjectPath>LebbyJamies</ObjectPath>
 			<ShortName>LebbyJamies</ShortName>
 			<Path>Event/LebbyJamies.bnk</Path>
@@ -21,18 +21,104 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="121223540" Name="LebbyJamies" ObjectPath="\Events\Default Work Unit\LebbyJamies" GUID="{27CF8C2B-A284-43CC-8465-060BEF6F52AB}" DurationType="OneShot" DurationMin="21.007822" DurationMax="21.007822">
+				<Event Id="121223540" Name="LebbyJamies" ObjectPath="\Events\Default Work Unit\LebbyJamies" GUID="{27CF8C2B-A284-43CC-8465-060BEF6F52AB}" DurationType="OneShot" DurationMin="42" DurationMax="42">
 					<MediaRefs>
 						<MediaRef Id="550237060"/>
 					</MediaRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+		<SoundBank Id="221139265" Type="Bus" GUID="{A0EF456B-4F6A-43F8-811B-9E390D2985AE}" Language="SFX" Hash="{562B4CBF-E40D-BD6D-D094-34DA8876312C}">
+			<ObjectPath>auxHigh</ObjectPath>
+			<ShortName>auxHigh</ShortName>
+			<Path>Bus/auxHigh.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="33066933" Name="Gain (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxHigh\[Effect Slot [2]: (Gain)]\Gain (Custom)" GUID="{A129F3E5-8E23-4C6C-A89B-C415F42FF0B4}" LibName="Wwise Gain" LibId="9109507"/>
+					<Plugin Id="522670858" Name="Meter (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxHigh\[Effect Slot [1]: (Meter)]\Meter (Custom)" GUID="{D424650A-8555-4579-94B7-12F41BA90EB7}" LibName="Wwise Meter" LibId="8454147"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="960017122" Name="Low_Pass_200Hz" ObjectPath="\Effects\Factory Effects\Parametric EQ\Low Pass Filters\Low_Pass_200Hz" GUID="{830124FB-B9D5-4AE8-846E-E94A74652666}" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</ShareSets>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="221139265" Name="auxHigh" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxHigh" GUID="{A0EF456B-4F6A-43F8-811B-9E390D2985AE}">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="33066933"/>
+							<PluginRef Id="522670858"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="960017122"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+		<SoundBank Id="411780261" Type="Bus" GUID="{11DEE065-48C0-4503-80EE-9B44E2F76BF3}" Language="SFX" Hash="{9F588F81-8A47-94EA-C622-9CCE252A1E7B}">
+			<ObjectPath>auxLow</ObjectPath>
+			<ShortName>auxLow</ShortName>
+			<Path>Bus/auxLow.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="232436167" Name="Low_Pass_200Hz (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxLow\[Effect Slot [0]: (Parametric EQ)]\Low_Pass_200Hz (Custom)" GUID="{196D400C-9483-4C92-9BBC-036E627E9BC0}" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="675586664" Name="Meter (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxLow\[Effect Slot [1]: (Meter)]\Meter (Custom)" GUID="{96A7972A-5179-4DB0-A9EC-7824E835FAC4}" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="1010316256" Name="Gain (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxLow\[Effect Slot [2]: (Gain)]\Gain (Custom)" GUID="{F7970144-B307-4512-8576-5C8DCEBFEE62}" LibName="Wwise Gain" LibId="9109507"/>
+				</Custom>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="411780261" Name="auxLow" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxLow" GUID="{11DEE065-48C0-4503-80EE-9B44E2F76BF3}">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="232436167"/>
+							<PluginRef Id="675586664"/>
+							<PluginRef Id="1010316256"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+		<SoundBank Id="1049182825" Type="Bus" GUID="{2F101495-EB30-424C-BC1A-65445A22B142}" Language="SFX" Hash="{10164731-627D-B88D-4D10-F813FEA76EBB}">
+			<ObjectPath>auxMid</ObjectPath>
+			<ShortName>auxMid</ShortName>
+			<Path>Bus/auxMid.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="143149137" Name="Gain (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxMid\[Effect Slot [1]: (Gain)]\Gain (Custom)" GUID="{0309FE78-FA83-4304-BAA7-F766865F2B11}" LibName="Wwise Gain" LibId="9109507"/>
+					<Plugin Id="149468700" Name="Parametric EQ (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxMid\[Effect Slot [2]: (Parametric EQ)]\Parametric EQ (Custom)" GUID="{489F5C76-4306-43DD-BA0E-0EFF4EDDE30E}" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="814341732" Name="Meter (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxMid\[Effect Slot [0]: (Meter)]\Meter (Custom)" GUID="{438A682D-DE64-45AC-9412-869FB8317A4A}" LibName="Wwise Meter" LibId="8454147"/>
+				</Custom>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="1049182825" Name="auxMid" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxMid" GUID="{2F101495-EB30-424C-BC1A-65445A22B142}">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="143149137"/>
+							<PluginRef Id="149468700"/>
+							<PluginRef Id="814341732"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{FCE186F3-1024-6BD2-E95A-30C98667C591}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<Custom>
+					<Plugin Id="33066933" Name="Gain (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxHigh\[Effect Slot [2]: (Gain)]\Gain (Custom)" GUID="{A129F3E5-8E23-4C6C-A89B-C415F42FF0B4}" LibName="Wwise Gain" LibId="9109507"/>
+					<Plugin Id="143149137" Name="Gain (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxMid\[Effect Slot [1]: (Gain)]\Gain (Custom)" GUID="{0309FE78-FA83-4304-BAA7-F766865F2B11}" LibName="Wwise Gain" LibId="9109507"/>
+					<Plugin Id="149468700" Name="Parametric EQ (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxMid\[Effect Slot [2]: (Parametric EQ)]\Parametric EQ (Custom)" GUID="{489F5C76-4306-43DD-BA0E-0EFF4EDDE30E}" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="232436167" Name="Low_Pass_200Hz (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxLow\[Effect Slot [0]: (Parametric EQ)]\Low_Pass_200Hz (Custom)" GUID="{196D400C-9483-4C92-9BBC-036E627E9BC0}" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="522670858" Name="Meter (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxHigh\[Effect Slot [1]: (Meter)]\Meter (Custom)" GUID="{D424650A-8555-4579-94B7-12F41BA90EB7}" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="675586664" Name="Meter (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxLow\[Effect Slot [1]: (Meter)]\Meter (Custom)" GUID="{96A7972A-5179-4DB0-A9EC-7824E835FAC4}" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="814341732" Name="Meter (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxMid\[Effect Slot [0]: (Meter)]\Meter (Custom)" GUID="{438A682D-DE64-45AC-9412-869FB8317A4A}" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="1010316256" Name="Gain (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxLow\[Effect Slot [2]: (Gain)]\Gain (Custom)" GUID="{F7970144-B307-4512-8576-5C8DCEBFEE62}" LibName="Wwise Gain" LibId="9109507"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="960017122" Name="Low_Pass_200Hz" ObjectPath="\Effects\Factory Effects\Parametric EQ\Low Pass Filters\Low_Pass_200Hz" GUID="{830124FB-B9D5-4AE8-846E-E94A74652666}" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{E2A0357B-9BBD-4602-BEAB-A49FEFC24C0D}" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" ObjectPath="\Audio Devices\Default Work Unit\System" GUID="{5DDEBDE7-D2CC-4E89-BE26-E94DB901713C}" LibName="System" LibId="11403271"/>
@@ -41,6 +127,42 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="221139265" Name="auxHigh" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxHigh" GUID="{A0EF456B-4F6A-43F8-811B-9E390D2985AE}">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="33066933"/>
+							<PluginRef Id="522670858"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="960017122"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="411780261" Name="auxLow" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxLow" GUID="{11DEE065-48C0-4503-80EE-9B44E2F76BF3}">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="232436167"/>
+							<PluginRef Id="675586664"/>
+							<PluginRef Id="1010316256"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="1049182825" Name="auxMid" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxMid" GUID="{2F101495-EB30-424C-BC1A-65445A22B142}">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="143149137"/>
+							<PluginRef Id="149468700"/>
+							<PluginRef Id="814341732"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="545371365" Name="Low" ObjectPath="\Game Parameters\Default Work Unit\Low" GUID="{A10F9088-EE3D-439F-9638-A4AF9DF5A792}"/>
+				<GameParameter Id="1182670505" Name="Mid" ObjectPath="\Game Parameters\Default Work Unit\Mid" GUID="{BA02D916-F2BD-443B-83C4-F5E77C78427C}"/>
+				<GameParameter Id="3550808449" Name="High" ObjectPath="\Game Parameters\Default Work Unit\High" GUID="{147AA7AA-7083-40D4-A598-2CD0807C9EA5}"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="2726606664" Type="Event" GUID="{35B8B023-DF2F-4361-B789-6A09BFFD41CE}" Language="SFX" Hash="{008C2042-1AC2-9694-A29D-7E116F080CE4}">
 			<ObjectPath>drums</ObjectPath>
@@ -62,5 +184,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{10257808-37C7-A65E-13CC-548FFCD8EA42}</FileHash>
+	<FileHash>{C65DFC03-526A-FF8F-82BF-0B4360E99048}</FileHash>
 </SoundBanksInfo>

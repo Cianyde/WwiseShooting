@@ -1,0 +1,8 @@
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	221139265	auxHigh			\Default Work Unit\Master Audio Bus\auxHigh	
+
+Effect plug-ins	ID	Name	Type				Notes
+	33066933	Gain (Custom)	Wwise Gain			
+	522670858	Meter (Custom)	Wwise Meter			
+	960017122	Low_Pass_200Hz	Wwise Parametric EQ			
+

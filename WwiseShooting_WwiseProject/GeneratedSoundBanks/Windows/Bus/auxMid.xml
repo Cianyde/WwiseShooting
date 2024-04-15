@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="1049182825" Type="Bus" GUID="{2F101495-EB30-424C-BC1A-65445A22B142}" Language="SFX" Hash="{10164731-627D-B88D-4D10-F813FEA76EBB}">
+			<ObjectPath>auxMid</ObjectPath>
+			<ShortName>auxMid</ShortName>
+			<Path>Bus/auxMid.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="143149137" Name="Gain (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxMid\[Effect Slot [1]: (Gain)]\Gain (Custom)" GUID="{0309FE78-FA83-4304-BAA7-F766865F2B11}" LibName="Wwise Gain" LibId="9109507"/>
+					<Plugin Id="149468700" Name="Parametric EQ (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxMid\[Effect Slot [2]: (Parametric EQ)]\Parametric EQ (Custom)" GUID="{489F5C76-4306-43DD-BA0E-0EFF4EDDE30E}" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="814341732" Name="Meter (Custom)" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxMid\[Effect Slot [0]: (Meter)]\Meter (Custom)" GUID="{438A682D-DE64-45AC-9412-869FB8317A4A}" LibName="Wwise Meter" LibId="8454147"/>
+				</Custom>
+			</Plugins>
+			<AuxBusses>
+				<AuxBus Id="1049182825" Name="auxMid" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\auxMid" GUID="{2F101495-EB30-424C-BC1A-65445A22B142}">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="143149137"/>
+							<PluginRef Id="149468700"/>
+							<PluginRef Id="814341732"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{C5DC3EE6-E2E5-9D98-E17C-B8772B3FAFE0}</FileHash>
+</SoundBanksInfo>

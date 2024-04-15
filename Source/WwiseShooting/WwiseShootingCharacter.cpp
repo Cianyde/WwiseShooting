@@ -10,6 +10,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "Engine/LocalPlayer.h"
+#include "InventoryComponent.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -38,6 +39,8 @@ AWwiseShootingCharacter::AWwiseShootingCharacter()
 	Mesh1P->CastShadow = false;
 	//Mesh1P->SetRelativeRotation(FRotator(0.9f, -19.19f, 5.2f));
 	Mesh1P->SetRelativeLocation(FVector(-30.f, 0.f, -150.f));
+
+	InventoryComponent = CreateDefaultSubobject<UInventoryComponent>(TEXT("InventoryComp"));
 
 }
 
@@ -112,7 +115,7 @@ void AWwiseShootingCharacter::SetHasRifle(bool bNewHasRifle)
 	bHasRifle = bNewHasRifle;
 }
 
-bool AWwiseShootingCharacter::GetHasRifle()
+bool AWwiseShootingCharacter::GetHasThisRifle(UTP_WeaponComponent* weapon)
 {
-	return bHasRifle;
+	return bHasRifle = InventoryComponent->InventoryContainsWeapon(weapon);
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="121223540" Type="Event" GUID="{27CF8C2B-A284-43CC-8465-060BEF6F52AB}" Language="SFX" Hash="{31580175-48BF-A0D2-54FE-8964E6DE283D}">
+		<SoundBank Id="121223540" Type="Event" GUID="{27CF8C2B-A284-43CC-8465-060BEF6F52AB}" Language="SFX" Hash="{30A4B0DD-B18F-339C-D0BB-DF4DB9A0B8AC}">
 			<ObjectPath>LebbyJamies</ObjectPath>
 			<ShortName>LebbyJamies</ShortName>
 			<Path>Event/LebbyJamies.bnk</Path>
@@ -13,7 +13,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="121223540" Name="LebbyJamies" ObjectPath="\Events\Default Work Unit\LebbyJamies" GUID="{27CF8C2B-A284-43CC-8465-060BEF6F52AB}" DurationType="OneShot" DurationMin="21.007822" DurationMax="21.007822">
+				<Event Id="121223540" Name="LebbyJamies" ObjectPath="\Events\Default Work Unit\LebbyJamies" GUID="{27CF8C2B-A284-43CC-8465-060BEF6F52AB}" DurationType="OneShot" DurationMin="42" DurationMax="42">
 					<MediaRefs>
 						<MediaRef Id="550237060"/>
 					</MediaRefs>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3BD98230-8EA5-6297-2D34-1308AB5CDC53}</FileHash>
+	<FileHash>{E7BCA712-CDBC-6496-EFA2-C35C46B9A8D4}</FileHash>
 </SoundBanksInfo>

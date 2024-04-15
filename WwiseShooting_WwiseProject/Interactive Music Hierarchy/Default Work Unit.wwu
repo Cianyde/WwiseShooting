@@ -156,8 +156,9 @@
 				</MusicSegment>
 				<MusicSegment Name="my Lebby Jammies" ID="{97BCD8D8-6A6D-4BE9-905D-B7A0570ED2D5}" ShortID="920342101">
 					<PropertyList>
-						<Property Name="EndPosition" Type="Real64" Value="21007.8231292517"/>
+						<Property Name="EndPosition" Type="Real64" Value="43875"/>
 						<Property Name="Tempo" Type="Real64" Value="160"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -166,9 +167,19 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2010E368-8ABC-4E91-9848-D5E9801C5325}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="auxLow" ID="{11DEE065-48C0-4503-80EE-9B44E2F76BF3}" WorkUnitID="{2010E368-8ABC-4E91-9848-D5E9801C5325}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="auxHigh" ID="{A0EF456B-4F6A-43F8-811B-9E390D2985AE}" WorkUnitID="{2010E368-8ABC-4E91-9848-D5E9801C5325}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<MusicTrack Name="my Lebby Jammies" ID="{9CFFBCC4-FBD6-47D8-BA64-03701AD1DDB4}" ShortID="308114263">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2010E368-8ABC-4E91-9848-D5E9801C5325}"/>
@@ -204,11 +215,70 @@
 															<Local>
 																<MusicClip Name="my Lebby Jammies" ID="{0CD5FD68-A928-4F89-BC3E-48F2FD911884}">
 																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="21007.8231292517"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="42000"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="my Lebby Jammies" ID="{1BB1F490-7F06-4CEE-80ED-BC1E1A37C19D}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{83190F99-CF67-4C28-A195-2E274450C908}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>42</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{1151B485-8875-4078-B55C-3B043C5795C1}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>42</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{973A263A-26E6-445E-8EB5-E6B80BCE0215}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>42</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</Local>
 														</Reference>
@@ -236,6 +306,78 @@
 											<Property Name="TimeMs" Type="Real64" Value="21007.8231292517"/>
 										</PropertyList>
 									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{C8908E88-9A5E-4587-981E-D2A6C34C69D4}" ShortID="952172490">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="GameAuxSendLPF"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Low" ID="{A10F9088-EE3D-439F-9638-A4AF9DF5A792}" WorkUnitID="{00B60C4A-F386-4E94-B1DC-A8B359CDBF49}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{0FEE666B-455C-48E5-9C23-4D3FCD0B893C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-48</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{FE3B96D0-F92C-4362-AB44-222CD20F0E22}" ShortID="482858369">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="GameAuxSendHPF"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="High" ID="{147AA7AA-7083-40D4-A598-2CD0807C9EA5}" WorkUnitID="{00B60C4A-F386-4E94-B1DC-A8B359CDBF49}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{AA8D6855-7ECD-4294-99B9-86B681DE8D60}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-48</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
 								</Local>
 							</Reference>
 						</ObjectList>

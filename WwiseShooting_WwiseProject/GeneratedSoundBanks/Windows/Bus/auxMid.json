@@ -1,0 +1,70 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "1049182825",
+    "Type": "Bus",
+    "GUID": "{2F101495-EB30-424C-BC1A-65445A22B142}",
+    "Language": "SFX",
+    "Hash": "{10164731-627D-B88D-4D10-F813FEA76EBB}",
+    "ObjectPath": "auxMid",
+    "ShortName": "auxMid",
+    "Path": "Bus/auxMid.bnk",
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "143149137",
+       "Name": "Gain (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxMid\\[Effect Slot [1]: (Gain)]\\Gain (Custom)",
+       "GUID": "{0309FE78-FA83-4304-BAA7-F766865F2B11}",
+       "LibName": "Wwise Gain",
+       "LibId": "9109507"
+      },
+      {
+       "Id": "149468700",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxMid\\[Effect Slot [2]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{489F5C76-4306-43DD-BA0E-0EFF4EDDE30E}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "814341732",
+       "Name": "Meter (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxMid\\[Effect Slot [0]: (Meter)]\\Meter (Custom)",
+       "GUID": "{438A682D-DE64-45AC-9412-869FB8317A4A}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "1049182825",
+      "Name": "auxMid",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxMid",
+      "GUID": "{2F101495-EB30-424C-BC1A-65445A22B142}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "143149137"
+        },
+        {
+         "Id": "149468700"
+        },
+        {
+         "Id": "814341732"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9D14508D-F65C-0ECB-B51B-BFEC85AD82D4}"
+ }
+}

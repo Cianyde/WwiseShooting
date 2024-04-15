@@ -51,12 +51,11 @@ public:
 
 	/** Attaches the actor to a FirstPersonCharacter */
 	UFUNCTION(BlueprintCallable, Category="Weapon")
-	void AttachWeapon(AWwiseShootingCharacter* TargetCharacter);
+	void AttachWeapon(AWwiseShootingCharacter* TargetCharacter, UTP_WeaponComponent* pickedUpWeapon);
 
 	/** Make the weapon Fire a Projectile */
 	UFUNCTION(BlueprintCallable, Category="Weapon")
 	void Fire();
-
 protected:
 	/** Ends gameplay for this component. */
 	UFUNCTION()
@@ -64,7 +63,7 @@ protected:
 
 	FOnAkPostEventCallback BindCallback;
 
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	void beatCallBack();
 
 	bool readyToFire = false;

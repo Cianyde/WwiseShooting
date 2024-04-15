@@ -10,11 +10,87 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{B6CBD692-12EC-CDBA-0932-48F63C40C91F}",
+    "Hash": "{FCE186F3-1024-6BD2-E95A-30C98667C591}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "Custom": [
+      {
+       "Id": "33066933",
+       "Name": "Gain (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxHigh\\[Effect Slot [2]: (Gain)]\\Gain (Custom)",
+       "GUID": "{A129F3E5-8E23-4C6C-A89B-C415F42FF0B4}",
+       "LibName": "Wwise Gain",
+       "LibId": "9109507"
+      },
+      {
+       "Id": "143149137",
+       "Name": "Gain (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxMid\\[Effect Slot [1]: (Gain)]\\Gain (Custom)",
+       "GUID": "{0309FE78-FA83-4304-BAA7-F766865F2B11}",
+       "LibName": "Wwise Gain",
+       "LibId": "9109507"
+      },
+      {
+       "Id": "149468700",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxMid\\[Effect Slot [2]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{489F5C76-4306-43DD-BA0E-0EFF4EDDE30E}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "232436167",
+       "Name": "Low_Pass_200Hz (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxLow\\[Effect Slot [0]: (Parametric EQ)]\\Low_Pass_200Hz (Custom)",
+       "GUID": "{196D400C-9483-4C92-9BBC-036E627E9BC0}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "522670858",
+       "Name": "Meter (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxHigh\\[Effect Slot [1]: (Meter)]\\Meter (Custom)",
+       "GUID": "{D424650A-8555-4579-94B7-12F41BA90EB7}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      },
+      {
+       "Id": "675586664",
+       "Name": "Meter (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxLow\\[Effect Slot [1]: (Meter)]\\Meter (Custom)",
+       "GUID": "{96A7972A-5179-4DB0-A9EC-7824E835FAC4}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      },
+      {
+       "Id": "814341732",
+       "Name": "Meter (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxMid\\[Effect Slot [0]: (Meter)]\\Meter (Custom)",
+       "GUID": "{438A682D-DE64-45AC-9412-869FB8317A4A}",
+       "LibName": "Wwise Meter",
+       "LibId": "8454147"
+      },
+      {
+       "Id": "1010316256",
+       "Name": "Gain (Custom)",
+       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxLow\\[Effect Slot [2]: (Gain)]\\Gain (Custom)",
+       "GUID": "{F7970144-B307-4512-8576-5C8DCEBFEE62}",
+       "LibName": "Wwise Gain",
+       "LibId": "9109507"
+      }
+     ],
+     "ShareSets": [
+      {
+       "Id": "960017122",
+       "Name": "Low_Pass_200Hz",
+       "ObjectPath": "\\Effects\\Factory Effects\\Parametric EQ\\Low Pass Filters\\Low_Pass_200Hz",
+       "GUID": "{830124FB-B9D5-4AE8-846E-E94A74652666}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -41,9 +117,90 @@
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
+    ],
+    "AuxBusses": [
+     {
+      "Id": "221139265",
+      "Name": "auxHigh",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxHigh",
+      "GUID": "{A0EF456B-4F6A-43F8-811B-9E390D2985AE}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "33066933"
+        },
+        {
+         "Id": "522670858"
+        }
+       ],
+       "ShareSets": [
+        {
+         "Id": "960017122"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "411780261",
+      "Name": "auxLow",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxLow",
+      "GUID": "{11DEE065-48C0-4503-80EE-9B44E2F76BF3}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "232436167"
+        },
+        {
+         "Id": "675586664"
+        },
+        {
+         "Id": "1010316256"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "1049182825",
+      "Name": "auxMid",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\auxMid",
+      "GUID": "{2F101495-EB30-424C-BC1A-65445A22B142}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "143149137"
+        },
+        {
+         "Id": "149468700"
+        },
+        {
+         "Id": "814341732"
+        }
+       ]
+      }
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "545371365",
+      "Name": "Low",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Low",
+      "GUID": "{A10F9088-EE3D-439F-9638-A4AF9DF5A792}"
+     },
+     {
+      "Id": "1182670505",
+      "Name": "Mid",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mid",
+      "GUID": "{BA02D916-F2BD-443B-83C4-F5E77C78427C}"
+     },
+     {
+      "Id": "3550808449",
+      "Name": "High",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\High",
+      "GUID": "{147AA7AA-7083-40D4-A598-2CD0807C9EA5}"
+     }
     ]
    }
   ],
-  "FileHash": "{E1DCDA34-16CA-CDFC-4A9D-82F1E6C759C1}"
+  "FileHash": "{026ECB09-4704-0F2B-0AA8-3D031AE85E43}"
  }
 }

@@ -9,6 +9,148 @@
 							<ObjectRef Name="System" ID="{5DDEBDE7-D2CC-4E89-BE26-E94DB901713C}" WorkUnitID="{71257ED5-4547-4877-B5C6-5B999234B328}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="auxLow" ID="{11DEE065-48C0-4503-80EE-9B44E2F76BF3}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{0615793A-8006-4C29-A70B-1BECAD1328D7}" ShortID="437993972">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom CreatedFrom="{830124FB-B9D5-4AE8-846E-E94A74652666}">
+															<Effect Name="Low_Pass_200Hz (Custom)" ID="{196D400C-9483-4C92-9BBC-036E627E9BC0}" ShortID="232436167" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																<PropertyList>
+																	<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+																	<Property Name="FilterTypeBand3" Type="int32" Value="1"/>
+																	<Property Name="FrequencyBand3" Type="Real32" Value="1000"/>
+																	<Property Name="OnOffBand1" Type="bool" Value="False"/>
+																	<Property Name="OnOffBand2" Type="bool" Value="False"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{2ED0DCD6-8F74-4D64-BE08-9C365E412A7C}" ShortID="708038035">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Meter (Custom)" ID="{96A7972A-5179-4DB0-A9EC-7824E835FAC4}" ShortID="675586664" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+																<ObjectLists>
+																	<ObjectList Name="RTPC">
+																		<Reference>
+																			<Local>
+																				<RTPC Name="" ID="{1620DEB3-FB1E-4C09-8C54-C7E2C8048AE2}" ShortID="582983859">
+																					<PropertyList>
+																						<Property Name="PropertyName" Type="string" Value="AttackTime"/>
+																					</PropertyList>
+																					<ReferenceList/>
+																				</RTPC>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<PluginData>
+	<GameParameter Name="Low" ID="{A10F9088-EE3D-439F-9638-A4AF9DF5A792}"/>
+</PluginData>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{26557CB8-D051-4FC4-AAD3-38D7AE23AD19}" ShortID="1047089587">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Gain (Custom)" ID="{F7970144-B307-4512-8576-5C8DCEBFEE62}" ShortID="1010316256" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+																<PropertyList>
+																	<Property Name="FullBandGain" Type="Real32" Value="-96"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="auxHigh" ID="{A0EF456B-4F6A-43F8-811B-9E390D2985AE}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{B456CEC9-B72E-4FE4-9EF7-05405F939152}" ShortID="1016836682">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{0BBB45D7-15E9-46CC-8DC3-3EBB48DFD411}" ShortID="331018995">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Meter (Custom)" ID="{D424650A-8555-4579-94B7-12F41BA90EB7}" ShortID="522670858" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+																<ObjectLists>
+																	<ObjectList Name="RTPC">
+																		<Reference>
+																			<Local>
+																				<RTPC Name="" ID="{F7BD4C70-089A-4794-8179-350A1DD1E469}" ShortID="273779294">
+																					<PropertyList>
+																						<Property Name="PropertyName" Type="string" Value="AttackTime"/>
+																					</PropertyList>
+																					<ReferenceList/>
+																				</RTPC>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<PluginData>
+	<GameParameter Name="High" ID="{147AA7AA-7083-40D4-A598-2CD0807C9EA5}"/>
+</PluginData>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{B6948034-2140-42F3-9E49-2DB04BFFBDE0}" ShortID="238443505">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Gain (Custom)" ID="{A129F3E5-8E23-4C6C-A89B-C415F42FF0B4}" ShortID="33066933" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+																<PropertyList>
+																	<Property Name="FullBandGain" Type="Real32" Value="-96"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

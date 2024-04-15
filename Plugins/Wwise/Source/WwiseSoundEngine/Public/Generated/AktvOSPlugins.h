@@ -16,5 +16,7 @@ Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 
 #if PLATFORM_TVOS
-
+#include <AK/Plugin/AkParametricEQFXFactory.h>
+#include <AK/Plugin/AkMeterFXFactory.h>
+#include <AK/Plugin/AkGainFXFactory.h>
 #endif
